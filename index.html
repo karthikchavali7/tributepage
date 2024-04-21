@@ -7,82 +7,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            background-color: #000000;
+            color: #F0F0F0;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
         h1 {
             color: #F0F0F0;
             font-family: sans-serif;
             text-align: center;
+            margin-top: 20px;
         }
 
         img {
             display: block;
-            margin-left: 26%;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
         }
 
         p {
-            color: #F0F0F0;
             text-align: center;
+            margin: 20px;
         }
 
         h4 {
-            color: #F0F0F0;
             text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        td,
-        th {
-            color: #F0F0F0;
-            font-family: Arial, Helvetica, sans-serif;
-
         }
 
         table {
-            margin-left: 26%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
         }
-        h3{
+
+        th,
+        td {
+            border: 1px solid #F0F0F0;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
             color: #F0F0F0;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
         }
-        
-        
+
+        h3 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+
+            img {
+                margin-left: 0;
+            }
+        }
     </style>
 </head>
 
-<body bgcolor="#000000">
-    <h1> Steve jobs</h1>
-    <img  src="https://i.pinimg.com/originals/f0/da/7b/f0da7b3ad9989546c968b17abc3fda9f.png" alt="steve">
-    <h1>Steve Jobs was one of the most influential<br> entrepreneurs in the field of IT.</h1>
+<body>
+    <h1>Steve Jobs</h1>
+    <img src="https://i.pinimg.com/originals/f0/da/7b/f0da7b3ad9989546c968b17abc3fda9f.png" alt="Steve Jobs">
+    <h1>Steve Jobs was one of the most influential entrepreneurs in the field of IT.</h1>
     <p>
-    <h4>He was the founder and CEO of Apple Inc. - one of the biggest IT<br> companies in the world.His ideas and
-        passion for innovative inventions is<br> celebrated by the mordern IT community. His vision and drive have
-        forever<br> changed computing by bringing us the Mac, the iPhone and the iPad.<br> He achieved a lot at a very
-        young age and inspired an entire generation of<br> young entrepreneurs. He is respected worldwide as a role
-        model and icon for success. His life is an ispiration for <br>anyone who has a passion for IT innovation or
-        entrepreneurship.</h4>
+        <h4>He was the founder and CEO of Apple Inc. - one of the biggest IT companies in the world. His ideas and
+            passion for innovative inventions are celebrated by the modern IT community. His vision and drive have
+            forever changed computing by bringing us the Mac, the iPhone, and the iPad. He achieved a lot at a very
+            young age and inspired an entire generation of young entrepreneurs. He is respected worldwide as a role
+            model and icon for success. His life is an inspiration for anyone who has a passion for IT innovation or
+            entrepreneurship.</h4>
     </p>
     <h1>Timeline</h1>
-    <table cellpadding="20">
+    <table>
         <tr>
             <th>
                 <h3>Feb 1955</h3>
             </th>
-            <td>Steve was born in San Francisco, the son of Abdulfattah Jandali and <br>Joanne Schieble. He is quickly
+            <td>Steve was born in San Francisco, the son of Abdulfattah Jandali and Joanne Schieble. He is quickly
                 adopted by Paul and Clara Jobs</td>
         </tr>
         <tr>
             <th>
                 <h3>1960</h3>
             </th>
-            <td>The Jobs family moves from San Francisco to Mountain View, a<br> suburban town in Santa Clara county,
-                more commonly known as <br>Silicon Valley</td>
+            <td>The Jobs family moves from San Francisco to Mountain View, a suburban town in Santa Clara county, more
+                commonly known as Silicon Valley</td>
         </tr>
         <tr>
             <th>
                 <h3>1969</h3>
             </th>
-            <td>Steve Jobs meets Steve Wozniak, 5 years older, through a mutual<br> friend. Woz and Steve share a love
-                of electronics, Bob Dylan, and <br>pranks</td>
+            <td>Steve Jobs meets Steve Wozniak, 5 years older, through a mutual friend. Woz and Steve share a love of
+                electronics, Bob Dylan, and pranks</td>
         </tr>
         <tr>
             <th>
@@ -98,18 +122,19 @@
         </tr>
         <tr>
             <th>
-                <h3>Apr 1976
-                </h3>
+                <h3>Apr 1976</h3>
             </th>
-            <td>Apple Computer Inc. is incorporated by Steve Jobs, Steve Wozniak and Ron Wayne</td>
+            <td>Apple Computer Inc. is incorporated by Steve Jobs, Steve Wozniak, and Ron Wayne</td>
         </tr>
         <tr>
             <th><h3>1978</h3></th>
-            <td>The Apple II becomes the first mass-market personal computer, with <br>impressive sales around the US. Apple becomes a symbol of the<br> personal computing revolution</td>
+            <td>The Apple II becomes the first mass-market personal computer, with impressive sales around the US. Apple
+                becomes a symbol of the personal computing revolution</td>
         </tr>
         <tr>
             <th><h3>Sep 1985</h3></th>
-            <td>Steve Jobs resigns from Apple and starts NeXT with five other<br> refugees from Apple. Apple announces it will sue NeXT</td>
+            <td>Steve Jobs resigns from Apple and starts NeXT with five other refugees from Apple. Apple announces it
+                will sue NeXT</td>
         </tr>
         <tr>
             <th><h3>Jan 1992</h3></th>
@@ -117,31 +142,36 @@
         </tr>
         <tr>
             <th><h3>Dec 1996</h3></th>
-            <td>Apple, which was desperately looking for a modern operating system <br>to buy, eventually buys NeXT for $400 million. Steve Jobs is named <br>"informal adviser" to Apple CEO Gil Amelio</td>
+            <td>Apple, which was desperately looking for a modern operating system to buy, eventually buys NeXT for $400
+                million. Steve Jobs is named "informal adviser" to Apple CEO Gil Amelio</td>
         </tr>
         <tr>
-            <th><h3>July 1997
-            </h3></th>
-            <td>Gil Amelio is ousted by the Apple Board of directors after a disastrous<br> quarter. Steve Jobs is named interim CEO in his <br>place and installs his NeXT executive team at the top of Apple</td>
-
+            <th><h3>July 1997</h3></th>
+            <td>Gil Amelio is ousted by the Apple Board of directors after a disastrous quarter. Steve Jobs is named
+                interim CEO in his place and installs his NeXT executive team at the top of Apple</td>
         </tr>
         <tr>
-            <th>Aug 2011
-            </th>
-            <td>Steve Jobs resigns as CEO of Apple, with the words 'I have always said<br> if there ever came a day when I could no longer meet my duties and <br>expectations as Apple's CEO, I would be the first to let you know.<br> Unfortunately, that day has come.' Tim Cook becomes Apple CEO
-            </td>
+            <th><h3>Aug 2011</h3></th>
+            <td>Steve Jobs resigns as CEO of Apple, with the words 'I have always said if there ever came a day when I
+                could no longer meet my duties and expectations as Apple's CEO, I would be the first to let you know.
+                Unfortunately, that day has come.' Tim Cook becomes Apple CEO</td>
         </tr>
         <tr>
-            <th><h3>Oct 2011</h3>
-            </th>
-            <td>Steve Jobs dies at home, surrounded by his family
-            </td>
+            <th><h3>Oct 2011</h3></th>
+            <td>Steve Jobs dies at home, surrounded by his family</td>
         </tr>
     </table>
-    <h1>Apple's domination</h1>
-    <p><h3>In the decade since the iPhone’s debut, Apple has sold an average of 120</h3><h3>million devices per year. Yet, 10 years and 1.2 billion device sales later,</h3><h3> today’s unveiling of the newest line of iPhones is the most anticipated</h3><h3>Apple product event since its initial release in 2007.</h3>
-
-       <h3> More remarkable than the newest features or latest design is the fact that</h3> <h3>the iPhone has retained its dominate position in terms of mindshare, if not </h3><h3>market share, for so long. (Samsung usually ranks first in the latter</h3><h3>category.) “When you are a dominant player, you have to think longer term</h3> <h3>and trust the relationship between your brand and consumers,” says</h3><h3> Jamen Graves, a senior partner in Korn Ferry’s Technology practice. “You </h3><h3>have to avoid the trap of getting caught battling competitors on features.”</h3></p>
+    <h1>Apple's Domination</h1>
+    <p>
+        <h3>In the decade since the iPhone’s debut, Apple has sold an average of 120 million devices per year. Yet, 10
+            years and 1.2 billion device sales later, today’s unveiling of the newest line of iPhones is the most
+            anticipated Apple product event since its initial release in 2007.</h3>
+        <h3>More remarkable than the newest features or latest design is the fact that the iPhone has retained its
+            dominant position in terms of mindshare, if not market share, for so long. (Samsung usually ranks first in
+            the latter category.) “When you are a dominant player, you have to think longer-term and trust the
+            relationship between your brand and consumers,” says Jamen Graves, a senior partner in Korn Ferry’s
+            Technology practice. “You have to avoid the trap of getting caught battling competitors on features.”</h3>
+    </p>
 
 </body>
 
